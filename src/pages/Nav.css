@@ -1,0 +1,158 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 0;
+}
+
+nav div li a {
+    display: block;
+    color: #640d1e;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.navLogo {
+    width: 160px;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger {
+    cursor: pointer;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 1rem;
+    
+}
+
+.navList {
+    display: flex;
+    column-gap: 6.5rem;
+
+}
+/* 
+.navItem>a>button:hover {
+    color: black;
+    transition: 0.4s;
+} */
+
+.active {
+  color: black;
+  text-decoration: underline;
+}
+
+.inactiveNav {
+    color: rgb(100, 100, 100);
+}
+@media screen and (max-width:900px) {
+    .nav {
+        width: 100vw;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .navigationMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #640d1e 20%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        margin: 0 0;
+        width: 100%;
+        height: 100vh;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }   
+  
+    .show-menu {
+        right:0;
+        transition: right 0.4s;
+    }
+    
+    .navigationMenu>ul {
+         display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:901px) {
+    .nav {
+        padding: 1rem 2rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Cooking the Hamburger */
+.cheese {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #1D1E1C;
+    position: absolute;
+    transition: 0.3s;
+    margin-top: calc(2rem - 10px);
+}
+
+.ham {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #1D1E1C;
+    position: absolute;
+    margin-top: calc(2rem - 15px);
+    transition: 0.3s;
+}
+
+.bun {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #1D1E1C;
+    position: absolute;
+    margin-top: calc(2rem - 20px);
+    transition: 0.3s;
+}
+
+.cheesex {
+    transform-origin: 80%;
+    transition: 0.3s;
+    transform: rotate(50deg);
+  }
+  
+.hamx {
+    display: none;
+}
+
+.bunx {
+    transform-origin: 80%;
+    transition: 0.3s;
+    transform: rotate(-50deg);
+}
+  
