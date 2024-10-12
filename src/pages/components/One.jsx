@@ -22,11 +22,10 @@ function One() {
     <div className='homePage'>
     <div>
         <p>
-            At <span className='tfcred'>The FlowChart Nigeria</span> , we are building the most 
-            comprehensive database on <span className='tfcpink'>period poverty</span> in Nigeria. 
-            We plan to put this out in the form of an <span className='tfcred'> interactive 
-            map.</span> This is to help <span className='tfcpink'>you</span> be aware and make data driven 
-            decisions in the fight against period poverty.
+            At <span className='tfcred'>The FlowChart Nigeria</span>, we are building the most 
+            comprehensive database on <span className='tfcpink'>period poverty</span> and alleviation efforts in Nigeria 
+            to be displayed in the form of an<span className='tfcred'> interactive map.</span> 
+            This is to increase awareness, track progress, promote advocacy and direct efforts towards ending period poverty🩸
         </p>
     </div>
     <br /><br /><br />

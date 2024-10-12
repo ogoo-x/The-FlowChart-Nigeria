@@ -59,14 +59,16 @@ nav div li a {
     color: rgb(100, 100, 100);
 }
 @media screen and (max-width:900px) {
+    .nav::before, .navigationMenu::before {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
     .nav {
         width: 100vw;
         padding: 1rem 1.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
     }
 
     .navigationMenu {
@@ -74,8 +76,6 @@ nav div li a {
         top: 0;
         right: -100%;
         background-color: #640d1e 20%;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         margin: 0 0;
         width: 100%;
         height: 100vh;
