@@ -83,7 +83,6 @@ function One() {
       </div>
       </div>
     </div>
-    </div>
   )
 }
 
