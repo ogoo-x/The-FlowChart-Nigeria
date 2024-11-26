@@ -1,32 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+a {
+  color:inherit;
+}
+
+button {
+  font-family: var(--header-font);
+  text-decoration: none;
+}
+
 :root {
-  --header-font: "Montserrat", Inter, sans-serif;
+  --header-font: "Montserrat", "Raleway", "Segoe UI", Inter, sans-serif;
   --title-font: "Playfair Display", Times New Roman, serif;
   --body-font: "Lato", "Segoe UI", Tahoma, Geneva, Arial, sans-serif;
-  --header-color:#3E403B;
+  --header-color:#3F413C;
   --title-color: #782835;
   --body-color: #000;
-  --background: #F8F8F8;
+  --background: #fff9f5;
   --tfcpink: #B94A75;
+}
+
+/* Typography */
+h1 {
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-size: 36px;
+  font-weight: 700;
 }
 
 body {
   background-color: var(--background);
   font-family: var(--header-font);
-  line-height: normal;
   font-size: 14px;
   font-weight: 400;
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 25px;
+  font-variant: all-small-caps;
+  font-weight: 600;
 }
 
 ul {
@@ -37,24 +63,37 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-family: var(--header-font);
-  color: var(--header-color);
-  font-size: 28px;
-  font-weight: 700;
-}
-
 nav div li:hover {
   text-decoration: underline;
   transition: 2s;
 }
 
 /* For larger screens */
-@media (width >= 1050px) {
-  h2 {
+@media (width >= 901px) {
+h1 {
   font-family: var(--header-font);
   color: var(--header-color);
   font-size: 48px;
   font-weight: 700;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--header-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--title-color);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 25px;
+  font-variant: all-small-caps;
+  font-weight: 600;
 }
 }

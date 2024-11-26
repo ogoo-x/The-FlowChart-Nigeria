@@ -11,20 +11,48 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 80vw;
+    width: 100vw;
     justify-content: space-between;
     margin: 0;
 }
 
-nav div li a {
+.navItem a button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     display: block;
     color: #640d1e;
     padding: 0.5rem;
     font-weight: 600;
+
+}
+
+/* .navItem a button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #640d1e;
+    transition: width 300ms linear;
+} */
+/* 
+.navItem a button::before:hover {
+    width: 0%;
+} */
+
+.navItem a button:hover {
+    color: black;
+    transition: 0.4s;
+}
+
+.active {
+  color: black;
 }
 
 .navLogo {
-    width: 160px;
+    width: 300px;
     position: relative;
     z-index: 1000;
 }
@@ -35,14 +63,13 @@ nav div li a {
     width: 40px;
     height: 40px;
     position: relative;
-    right: 1rem;
+    right: 0;
     
 }
 
 .navList {
     display: flex;
     column-gap: 6.5rem;
-}
 
 .navItem {
     z-index: 1000;
@@ -62,17 +89,6 @@ nav div li a {
     color: rgb(100, 100, 100);
 }
 @media screen and (max-width:900px) {
-    .nav::before, .navigationMenu::before {
-        backdrop-filter: blur(10px);
-        content: "";
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        
-    }
     .nav {
         width: 100vw;
         padding: 1rem 1.5rem;
@@ -80,7 +96,11 @@ nav div li a {
         flex-direction: row;
         justify-content: space-between;
     }
-
+    .navLogo {
+        width: 200px;
+        position: relative;
+        z-index: 1000;
+    }
     .navigationMenu {
         position: fixed;
         top: 0;
@@ -103,15 +123,28 @@ nav div li a {
     }
 }
 
-@media screen and (min-width:901px) {
+@media screen and (min-width:1101px) {
     .nav {
-        padding: 1rem 2rem;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        padding: 1.5rem 5rem;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     .hamburger {
         display: none;
+    }
+}
+
+/* Padding for Tablet size */
+@media screen and (min-width:600px) {
+    .nav {
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .nav {
+        padding: 1rem 4rem;
     }
 }
 

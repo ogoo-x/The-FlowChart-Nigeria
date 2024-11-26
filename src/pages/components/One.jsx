@@ -1,73 +1,89 @@
+// Depenndencies
 import React, {useState, useRef} from 'react';
-import "../Home.css";
-import Rocket from "../../assets/rocket.svg"
+import styles from "./One.module.css";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+// Assets
+import { FaArrowRightLong } from "react-icons/fa6";
+import Divider from "../../assets/Divider.svg";
+import Slideshow from './Slideshow';
+
+// Illustrations for landing page
+import NoSanitaryPad from "../../assets/HomepageIllustrations/NoSanitaryPad.svg";
+import NoMenstrualEducation from "../../assets/HomepageIllustrations/NoMenstrualEducation.svg";
+import NoWASH from "../../assets/HomepageIllustrations/NoWASH.svg";
+import { div } from 'framer-motion/client';
 
 function One() {
 
-  const formRef = useRef(null);
-  // const [loading, setLoading] = useState(false);
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbxBLAeYsZ650ymjQLlwQCGTXbGt7UBCp9PMKscRJsAZ7wG8o05sJJa_76pzy5V23vQ-/exec";
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    fetch(scriptUrl, {method: 'POST', body: new FormData(formRef.current)})
-    .then(res => {
-      console.log("SUCCESSFULLY SUBMITTED!")
-    })
-    .catch(err => console.log(err))
-  }
-
   return (
-    <div className='homePage'>
+    <div>
     <div>
         <p>
-            At <span className='tfcred'>The FlowChart Nigeria</span>, we are building the most 
-            comprehensive database on <span className='tfcpink'>period poverty</span> and alleviation efforts in Nigeria 
-            to be displayed in the form of an<span className='tfcred'> interactive map.</span> 
-            This is to increase awareness, track progress, promote advocacy and direct efforts towards ending period poverty🩸
+            At <span className='tfcred'>The FlowChart Nigeria</span> , we are building the most 
+            comprehensive database on <span className='tfcpink'>period poverty</span> in Nigeria. 
+            We plan to put this out in the form of an <span className='tfcred'> interactive 
+            map.</span> This is to help <span className='tfcpink'>you</span> be aware and make data driven 
+            decisions in the fight against period poverty.
         </p>
     </div>
-    <br /><br /><br />
-
-    <div>
+    <img src={Divider} className={styles.divider}/>
+    <div className={styles.content} id='introduction'>
+    <div className={styles.content2}>
       <div>
-        <p className='comingSoon'>
-          <div className='straightLine'></div>
-          We are Coming Soon
+        <h2>
+          What is <em>Period Poverty?</em> 
+        </h2>
+        <p>
+          Every month, more than two billion people around the world menstruate. <br />
+          Menstruation – or <em>period</em> – is a natural and healthy process, yet 
+          millions of women and girls cannot afford menstrual products or access to safe water 
+          and sanitation to manage their menstrual health and  hygiene. This interrupts their lives, 
+          rights, and freedoms. <br /><br />
+          Period poverty refers to the inability to afford or access basic resources 
+          needed for proper menstrual health management. 
+          </p>
+        <br />
+        <h3>WHAT DOES PERIOD POVERTY LOOK LIKE?</h3>
+        <div className={styles.ppcards}>
+          <div className={styles.ppCard}>
+            <p>Lack of access to adequate and quality sanitary products.</p>
+            <img src={NoSanitaryPad} className={styles.illustration} alt="Illustration of sanitary pads cancelled" />
+          </div>
+
+          <div className={styles.ppCard}>
+            <p>Poor Knowledge on menstrual health and hygiene.</p>
+            <img src={NoMenstrualEducation} className={styles.illustration} alt="Illustration of teacher in classroom cancelled" />
+          </div>
+
+          <div className={styles.ppCard}>
+            <p>Lack of access to clean water as well as clean and safe sanitation facilities.</p>
+            <img src={NoWASH} className={styles.illustration} alt="Illustration of handwashing cancelled" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    {/* Why Period Poverty should be everybody’s business*/}
+    <div>
+    <div>
+      <div className={styles.content}>
+        <h2>
+          Why <em>Period Poverty</em> should be everybody’s business 
+        </h2><br />
+        <p>
+          The lack of access to basic menstrual products like sanitary pads or tampons means that these 
+          females have to resort to other uncomfortable and sometimes harmful practices. 
+          <br />A lack of basic knowledge on what goes on inside their body and on proper menstrual hygiene 
+          leads to the normalisation of certain abnormalities, taboos and diseases.
+          <br />Some girls miss as much as <strong>100 days</strong> of their school calendar due to their periods  
         </p>
       </div>
-        <h2 className='launchTagline'>Be the first to be notified when we <span className='tfcred '>launch.</span></h2>
-    </div>
-    <br /><br /><br />
-
-    <div className='rocketImage'>
-      <img src={Rocket} alt="Line Drawing of a Rocket"/>
-    </div>
-
-    <br /><br /><br /><br /><br /><br /><br /><br />
-    <div>
-      <div className='amazingCta'>
-      <input className="c-checkbox" type="checkbox" id="checkbox" />
-      <div className="c-formContainer">
-        <form ref={formRef} onSubmit={handleSubmit} className="c-form" name="google-sheet">
-          <input name="email" className="c-form__input" placeholder="Please enter your email address" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required />
-          <label className="c-form__buttonLabel" for="checkbox">
-            <button className="c-form__button" type="submit">Send</button>
-          </label>
-          <label className="c-form__toggle" for="checkbox" data-title="Notify me"></label>
-        </form>
       </div>
       </div>
-      <div className='spamMessage'>
-        <p>We will also be sending you monthly updates on our progress 
-           and other interesting things in the period space.
-           <br /> We promise not to spam you.</p>
-      </div>
     </div>
-
     </div>
-    
   )
 }
 

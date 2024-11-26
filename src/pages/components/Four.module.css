@@ -1,0 +1,95 @@
+.content {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.counter h3{
+    font-weight: normal;
+    width: 200px;
+    font-size: 18px;
+}
+
+.counter h2 {
+    font-size: 80px;
+}
+
+/* CTA Cards */
+/* Individual card */
+.CTACard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    border: 1.5px solid var(--header-color);
+    background: #F9F9F7;
+}
+
+.CTACard h3 {
+    font-size: 32px;
+}
+
+.CTACard button {
+    background-color: var(--tfcpink);
+    color: white;
+    border: 1.5px solid var(--header-color);
+    font-variant: all-small-caps;
+    padding: 10px 20px;
+    font-size: inherit;
+}
+/* Card Page */
+.Calltoact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.rowOne {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.rowTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media screen and (max-width:900px) {
+    .content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+
+    .counter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rowOne {
+        flex-direction: column;
+    }
+
+    .rowTwo {
+        flex-direction: column;
+    }
+}

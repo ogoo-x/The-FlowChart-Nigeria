@@ -16,10 +16,10 @@ function Footer() {
 
   return (
     <footer className={styles.crimsonTide} id="footer">
-      <div className='flex flex-col justify-center'>
-        <p className='text-center'>Visit our Socials to learn more about how we are tackling period poverty and ways you can help</p>
+      <div className={styles.footer}>
+        <p className={styles.cta}>Visit our Socials to learn more about how we are tackling period poverty and ways you can help</p>
         <div className={styles.smGroup}>
-          <a href="https://www.facebook.com/profile.php?id=61566762519928" ><FaFacebookSquare size={30} className={styles.reactIcons}/></a>
+          <a href="https://web.facebook.com/profile.php?id=61567180061933" ><FaFacebookSquare size={30} className={styles.reactIcons}/></a>
           <a href="https://x.com/TheFlowChartNig?t=X4LxgnuER3_QRJ1Bk7yxpg&s=08"><FaSquareXTwitter size={30} className={styles.reactIcons} /></a>
           <a href="https://www.instagram.com/theflowchartnigeria/"><AiFillInstagram size={30} className={styles.reactIcons} /> </a>
           <a href="#"><AiFillTikTok size={30} className={styles.reactIcons}/></a>

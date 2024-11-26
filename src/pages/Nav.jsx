@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Nav.css";
 import {NavLink, Outlet} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/Headline.svg";
 
 function Nav() {
   
@@ -30,14 +30,20 @@ function Nav() {
                 <li className="navItem">
                   <NavLink 
                       to="/"
-                      onClick={closeMenuOnMobile}
-                      className="inactiveNav" ><button>  MAP</button></NavLink>
+                      onClick={closeMenuOnMobile}>
+                      <button className="underlineEffect">  MAP</button></NavLink>
                 </li> 
                 <li className="navItem">
                   <NavLink 
-                      to="/"
-                      onClick={closeMenuOnMobile}
-                      className="inactiveNav" ><button>  RESOURCES</button></NavLink>
+                      to="/resources"
+                      onClick={closeMenuOnMobile}>
+                      <button>  RESOURCES</button></NavLink>
+                </li>
+                <li className="navItem">
+                  <NavLink 
+                      to="/about"
+                      onClick={closeMenuOnMobile}>
+                      <button>  ABOUT US</button></NavLink>
                 </li>
                 <li className="navItem">
                   <AnchorLink href="#footer" onClick={closeMenuOnMobile}>
