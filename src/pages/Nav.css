@@ -70,6 +70,7 @@
 .navList {
     display: flex;
     column-gap: 6.5rem;
+}
 
 .navItem {
     z-index: 1000;
@@ -81,14 +82,22 @@
 } */
 
 .active {
-  color: black;
-  text-decoration: underline;
-}
-
-.inactiveNav {
     color: rgb(100, 100, 100);
 }
+
 @media screen and (max-width:900px) {
+    .nav::before, .navigationMenu::before {
+        backdrop-filter: blur(10px);
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+    }
+    
     .nav {
         width: 100vw;
         padding: 1rem 1.5rem;

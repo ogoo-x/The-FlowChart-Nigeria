@@ -12,20 +12,21 @@
 }
 
 .content1 {
-    padding-top: 9rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
 }
 
-.headline {
+/* .headline {
     width: 70%;
 }
 
 .introtext {
     width: 90%;
-}
+} */
 
 .startStory {
     width: 155px;
+    color: var(--header-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,7 +42,7 @@
     margin-top: -10vw;
     display: block;
     z-index: 1000;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width:900px) {

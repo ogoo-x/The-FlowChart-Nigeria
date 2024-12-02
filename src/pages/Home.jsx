@@ -8,9 +8,9 @@ import "../App.css";
 
 function Home() {
     return (
-      <div>
+      <div className="section">
         <One />
-        <Slideshow />
+        {/* <Slideshow /> */}
         <Two />
         <Three />
         <Four />

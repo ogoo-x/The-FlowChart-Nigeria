@@ -31,23 +31,23 @@ function Nav() {
                   <NavLink 
                       to="/"
                       onClick={closeMenuOnMobile}>
-                      <button className="underlineEffect">  MAP</button></NavLink>
+                      <button>MAP</button></NavLink>
                 </li> 
                 <li className="navItem">
                   <NavLink 
                       to="/resources"
                       onClick={closeMenuOnMobile}>
-                      <button>  RESOURCES</button></NavLink>
+                      <button>RESOURCES</button></NavLink>
                 </li>
                 <li className="navItem">
                   <NavLink 
                       to="/about"
                       onClick={closeMenuOnMobile}>
-                      <button>  ABOUT US</button></NavLink>
+                      <button>ABOUT US</button></NavLink>
                 </li>
                 <li className="navItem">
                   <AnchorLink href="#footer" onClick={closeMenuOnMobile}>
-                  <button>  CONTACT</button>
+                  <button>CONTACT</button>
                   </AnchorLink>
                 </li>
               </ul>

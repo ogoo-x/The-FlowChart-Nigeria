@@ -11,7 +11,7 @@ function Slideshow()  {
 
   return (
     <div className={styles.parent} ref={targetRef}>
-        <div className={styles.slideShow}>
+       <div className={styles.slideShow}>
         <motion.div style={{x}} className={styles.slide}>
           <motion.div 
             className={`${styles.slides} ${styles.before}`}>
@@ -47,9 +47,9 @@ function Slideshow()  {
             <li>Psychological Impact: Ongoing stigma and shame can negatively impact mental health and self-esteem.</li>
           </div>
           </motion.div>
-        </motion.div>
+        </motion.div> 
         </div>
-      </div>
+      </div> 
   )
 }
 
