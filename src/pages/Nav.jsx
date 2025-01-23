@@ -28,10 +28,13 @@ function Nav() {
             <div className={`navigationMenu ${open ? "show-menu" : ""}`}>
               <ul className="navList">
                 <li className="navItem">
-                  <NavLink 
+                  <AnchorLink href='#map'>
+                    <NavLink 
                       to="/"
                       onClick={closeMenuOnMobile}>
                       <button>MAP</button></NavLink>
+                  </AnchorLink>
+                  
                 </li> 
                 <li className="navItem">
                   <NavLink 

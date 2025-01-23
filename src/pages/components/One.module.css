@@ -24,8 +24,20 @@
     width: 90%;
 } */
 
+.anchorLink {
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--title-color);
+    transition: 0.3s;
+}
+
+.anchorLink:hover {
+    color: black;
+    transition: 0.3s;
+}
+
 .startStory {
-    width: 155px;
+    width: 455px;
     color: var(--header-color);
     display: flex;
     flex-direction: row;

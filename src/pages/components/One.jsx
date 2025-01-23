@@ -2,17 +2,20 @@
 import React, {useState, useRef} from 'react';
 import styles from "./One.module.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { div } from 'framer-motion/client';
 
 // Assets
-import { FaArrowRightLong } from "react-icons/fa6";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Divider from "../../assets/Divider.svg";
 import Slideshow from './Slideshow';
+import MenstruationStats from './MenstruationStats';
+import PeriodPovertyStats from './PeriodPovertyStats';
 
 // Illustrations for landing page
 import NoSanitaryPad from "../../assets/HomepageIllustrations/NoSanitaryPad.svg";
 import NoMenstrualEducation from "../../assets/HomepageIllustrations/NoMenstrualEducation.svg";
 import NoWASH from "../../assets/HomepageIllustrations/NoWASH.svg";
-import { div } from 'framer-motion/client';
+
 
 function One() {
 
@@ -21,17 +24,12 @@ function One() {
     <div className={styles.homepage}>
     <div className= {styles.content}>
     <div className={styles.content1}>
-      <h1>Making Data-Driven Social Impact Decisions</h1> <br />
-        <p>
-            At <span className='tfcred'>The FlowChart Nigeria</span> , we are building the most 
-            comprehensive database on <span className='tfcpink'>period poverty</span> in Nigeria. 
-            We plan to put this out in the form of an <span className='tfcred'> interactive 
-            map.</span> This is to help <span className='tfcpink'>you</span> be aware and make data driven 
-            decisions in the fight against period poverty.
-        </p> <br />
-        <AnchorLink href='#introduction' className={styles.startStory}>
-          <h3>Start Here</h3><FaArrowRightLong/>
-        </AnchorLink>
+      <h1>Transform Lives Through Data-Driven Impact.</h1> <br />
+          <p>The FlowChart maps the scale and distribution of period poverty throughout Nigeria, empowering NGOs and organizations to
+             direct their resources where they're needed most. Our interactive visualization platform turns complex data into actionable insights.
+             <br /><br />
+             Now, stay with us to <AnchorLink href='#introduction' className={styles.anchorLink}> learn more about the problem of period poverty </AnchorLink> 
+             <br />and <AnchorLink href='#introduction' className={styles.anchorLink}> our unique approach to solving it.</AnchorLink></p>
     </div>
     </div>
     </div>
@@ -42,15 +40,15 @@ function One() {
         <h2>
           What is <em>Period Poverty?</em> 
         </h2>
-        <p>
-          Every month, more than two billion people around the world menstruate. <br />
-          Menstruation – or <em>period</em> – is a natural and healthy process, yet 
-          millions of women and girls cannot afford menstrual products or access to safe water 
-          and sanitation to manage their menstrual health and  hygiene. This interrupts their lives, 
+        <p>Every month, more than 60 million females menstruate in Nigeria.<br /></p>
+        <MenstruationStats />
+        <p>However, more than half of them cannot afford menstrual products or access to safe water 
+          and sanitation to manage their menstrual health and hygiene. This interrupts their lives, 
           rights, and freedoms. <br /><br />
           Period poverty refers to the inability to afford or access basic resources 
-          needed for proper menstrual health management. 
-          </p>
+          needed for proper menstrual health management.</p>
+        <PeriodPovertyStats />
+          
         <br />
         <h3>WHAT DOES PERIOD POVERTY LOOK LIKE?</h3>
         <div className={styles.ppcards}>
