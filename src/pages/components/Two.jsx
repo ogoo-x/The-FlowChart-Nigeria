@@ -75,7 +75,7 @@ function Two() {
           a mere myth in others. The burden of period poverty varies even between towns in the same cities. This knowledge emphasizes the need for directed efforts in addressing period poverty.
         </p>
         <br />
-        <div className={styles.stickFigures}>
+        {/* <div className={styles.stickFigures}>
           <div>
               <p>1 in 5 females in anambra lack access to period products.</p>
               <div>
@@ -96,7 +96,7 @@ function Two() {
                 <img src={GirlIconOutline} alt="GirlIconOutline" />
                 <img src={GirlIconOutline} alt="GirlIconOutline" />
               </div>
-          </div>
+          </div> */}
         </div>
         
         <div>
