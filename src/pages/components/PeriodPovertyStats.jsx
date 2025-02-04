@@ -5,7 +5,7 @@ const PeriodPovertyStats = () => {
   const [isAnimating, setIsAnimating] = useState(true);
   
   // Create array for menstruating population (20 items)
-  const menstruatingPopulation = Array.from({ length: 20 }, (_, i) => i);
+  const menstruatingPopulation = Array.from({ length: 12 }, (_, i) => i);
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,12 +70,12 @@ const PeriodPovertyStats = () => {
             <motion.div
               variants={waveVariants}
               animate={isAnimating ? "animate" : "initial"}
-              className={`w-12 h-12 rounded-full flex items-center justify-center
-                ${index < 12 ? 'bg-red-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+              className={`w-9 h-9 rounded-full flex items-center justify-center
+                ${index < 7 ? 'bg-red-500 text-white' : 'bg-gray-200 text-gray-600'}`}
             >
               <svg 
                 viewBox="0 0 24 24" 
-                className="w-8 h-8"
+                className="w-5 h-5"
                 fill="currentColor"
               >
                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -102,7 +102,7 @@ const PeriodPovertyStats = () => {
         transition={{ delay: 2.5 }}
         className="text-center mt-6 p-4 bg-red-50 rounded-lg"
       >
-        <p className="text-red-700 font-medium">
+        <p className="text-red-700">
           Over 37 million Nigerians struggle to afford or access period products monthly
         </p>
       </motion.div>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const MenstruationStats = () => {
   // Create an array of 30 items to represent the population
-  const population = Array.from({ length: 30 }, (_, i) => i);
+  const population = Array.from({ length: 12 }, (_, i) => i);
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -59,7 +59,7 @@ const MenstruationStats = () => {
               className="w-8 h-8 rounded-full"
               variants={highlightVariants}
               initial="initial"
-              animate={index < 10 ? "highlight" : "initial"}
+              animate={index < 4 ? "highlight" : "initial"}
             >
               <svg 
                 viewBox="0 0 24 24" 
@@ -74,7 +74,7 @@ const MenstruationStats = () => {
       </motion.div>
       
       <div className="text-center space-y-4">
-        <p className="text-lg italic">Approximately 1/3 of Nigeria's Population menstruate monthly</p>
+        <p className="italic">Approximately 1/3 of Nigeria's Population menstruate monthly</p>
       </div>
     </div>
   );

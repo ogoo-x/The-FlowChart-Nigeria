@@ -10,11 +10,13 @@ import Divider from "../../assets/Divider.svg";
 import Slideshow from './Slideshow';
 import MenstruationStats from './MenstruationStats';
 import PeriodPovertyStats from './PeriodPovertyStats';
+import PeriodPovertyCalendar from './PPCalendarAnimation';
 
 // Illustrations for landing page
 import NoSanitaryPad from "../../assets/HomepageIllustrations/NoSanitaryPad.svg";
 import NoMenstrualEducation from "../../assets/HomepageIllustrations/NoMenstrualEducation.svg";
 import NoWASH from "../../assets/HomepageIllustrations/NoWASH.svg";
+import DropoutPieChart from './DropoutPieChart';
 
 
 function One() {
@@ -63,7 +65,7 @@ function One() {
           </div>
 
           <div className={styles.ppCard}>
-            <p>Lack of access to clean water as well as clean and safe sanitation facilities.</p>
+            <p>Lack of access to clean water and proper sanitation facilities.</p>
             <img src={NoWASH} className={styles.illustration} alt="Illustration of handwashing cancelled" />
           </div>
         </div>
@@ -76,15 +78,14 @@ function One() {
     <div>
       <div className={styles.content}>
         <h2>
-          Why <em>Period Poverty</em> should be everybody’s business 
+          Now, why should <em>Period Poverty</em> be everybody’s business 
         </h2><br />
-        <p>
-          The lack of access to basic menstrual products like sanitary pads or tampons means that these 
-          females have to resort to other uncomfortable and sometimes harmful practices. 
-          <br />A lack of basic knowledge on what goes on inside their body and on proper menstrual hygiene 
-          leads to the normalisation of certain abnormalities, taboos and diseases.
-          <br />Some girls miss as much as <strong>100 days</strong> of their school calendar due to their periods  
-        </p>
+       <div className={styles.calender}>
+         <PeriodPovertyCalendar />
+       </div>
+       <div className={styles.piechart}>
+         <DropoutPieChart />
+       </div>
       </div>
       </div>
       </div>

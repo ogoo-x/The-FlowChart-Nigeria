@@ -7,7 +7,7 @@
 .content {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     overflow: hidden;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .divider{
-    margin-top: -10vw;
+    margin-top: -70px;
     display: block;
     z-index: 1000;
     overflow-x: hidden;
@@ -65,7 +65,7 @@
     }
 
     .divider {
-        margin-top: -15vh;
+        margin-top: -35px;
     }
 
     .headline {
@@ -126,7 +126,16 @@
     }
 
     .ppCard {
-        height: 250px;
+        height: 180px;
+        width: 200px;
+        padding: 1.2rem 0.9rem;
+    }
+
+    .illustration {
+        width: 70px;
     }
 }
 
+.calender {
+    margin-left: 0px;
+}
