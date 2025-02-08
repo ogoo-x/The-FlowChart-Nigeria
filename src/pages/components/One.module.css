@@ -59,6 +59,13 @@
 
 @media screen and (max-width:900px) {
     .content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .content {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: 2rem;

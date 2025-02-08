@@ -8,15 +8,14 @@ import { div } from 'framer-motion/client';
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Divider from "../../assets/Divider.svg";
 import Slideshow from './Slideshow';
-import MenstruationStats from './MenstruationStats';
-import PeriodPovertyStats from './PeriodPovertyStats';
-import PeriodPovertyCalendar from './PPCalendarAnimation';
+import MenstruationStats from './HomepageAnimations/MenstruationStats';
+import PeriodPovertyStats from './HomepageAnimations/PeriodPovertyStats';
+import PeriodPovertyCalendar from './HomepageAnimations/PPCalendarAnimation';
 
 // Illustrations for landing page
 import NoSanitaryPad from "../../assets/HomepageIllustrations/NoSanitaryPad.svg";
 import NoMenstrualEducation from "../../assets/HomepageIllustrations/NoMenstrualEducation.svg";
 import NoWASH from "../../assets/HomepageIllustrations/NoWASH.svg";
-import DropoutPieChart from './DropoutPieChart';
 
 
 function One() {
@@ -44,8 +43,8 @@ function One() {
         </h2>
         <p>Every month, more than 60 million females menstruate in Nigeria.<br /></p>
         <MenstruationStats />
-        <p>However, more than half of them cannot afford menstrual products or access to safe water 
-          and sanitation to manage their menstrual health and hygiene. This interrupts their lives, 
+        <p>However, more than half of them cannot afford menstrual products or access safe water 
+          and sanitation facilities to manage their menstrual health and hygiene. This interrupts their lives, 
           rights, and freedoms. <br /><br />
           Period poverty refers to the inability to afford or access basic resources 
           needed for proper menstrual health management.</p>
@@ -82,9 +81,6 @@ function One() {
         </h2><br />
        <div className={styles.calender}>
          <PeriodPovertyCalendar />
-       </div>
-       <div className={styles.piechart}>
-         <DropoutPieChart />
        </div>
       </div>
       </div>

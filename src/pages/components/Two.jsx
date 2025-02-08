@@ -47,7 +47,7 @@ function Two() {
         <div>
         <ResponsiveContainer width="100%" height={350}>
           <BarChart data={dataHBarChart} layout="vertical">
-            <XAxis type="number" label="Percentage of Minimum Statutory Wage Used"/>
+            <XAxis type="number"/>
             <YAxis dataKey="name" type="category" />
             {/* <Tooltip content={({ activeLabel, payload }) => (
                 <div className="custom-tooltip">
@@ -55,7 +55,7 @@ function Two() {
                   <p>{payload[0].value}%</p>
                 </div>
               )} /> */}
-            <Bar dataKey="value" fill="#fff9f5" barSize={30} stroke="#3F413C" strokeWidth={1.5}/>
+            <Bar dataKey="value" fill="#fff9f5" barSize={30} stroke="#3F413C" strokeWidth={1}/>
           </BarChart>
         </ResponsiveContainer><br />
         <Source SourceText={"BBC Africa Visual Journalism Research 2023"} LinktoSource={"https://www.bbc.com/news/world-africa-66423981"}/>
