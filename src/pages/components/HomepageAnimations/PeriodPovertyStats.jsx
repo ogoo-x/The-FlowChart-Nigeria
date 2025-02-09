@@ -13,7 +13,7 @@ const PeriodPovertyStats = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.05,
-        delayChildren: 0.5
+        delayChildren: 0.3
       }
     }
   };
@@ -47,17 +47,9 @@ const PeriodPovertyStats = () => {
 
   return (
     <div className="w-full max-w-3xl mx-auto p-8 space-y-8">
-      <motion.div 
-        className="text-center mb-8"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-      </motion.div>
-
       <motion.div
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         variants={containerVariants}
         className="grid grid-cols-5 gap-4 justify-items-center"
       >
@@ -98,8 +90,8 @@ const PeriodPovertyStats = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
         className="text-center mt-6 p-4 bg-red-50 rounded-lg"
       >
         <p className="text-red-700">

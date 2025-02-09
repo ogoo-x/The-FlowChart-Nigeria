@@ -44,7 +44,7 @@ const MenstruationStats = () => {
     <div className="w-full max-w-2xl mx-auto p-8">
       <motion.div
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         variants={containerVariants}
         className="flex flex-wrap gap-4 justify-center mb-8"
       >

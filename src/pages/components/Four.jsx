@@ -13,29 +13,20 @@ import Share from "../../assets/CTA/Advocacy.svg";
 
 const acData = [
     {
-        year:'2010-2012',
-        OriginalProportion: 70,
-        NewProportion: 63,
+        year:'2017',
+        Original: 44.1,
     },
     {
-        year:'2013-2015',
-        OriginalProportion: 80,
-        NewProportion: 60,
+        year:'2020',
+        Original: 31.4,
     },
     {
-        year:'2016-2018',
-        OriginalProportion: 50,
-        NewProportion: 40,
+        year:'2022',
+        Original: 23.1,
     },
     {
-        year:'2019-2021',
-        OriginalProportion: 70,
-        NewProportion: 50,
-    },
-    {
-        year:'2022-2024',
-        OriginalProportion: 40,
-        NewProportion: 25,
+        year:'2024',
+        Original: 14.6,
     },
 ]
 
@@ -84,11 +75,10 @@ function Four() {
                     <XAxis dataKey="year" />
                     <YAxis />
                     <Tooltip />
-                    <Area type="monotone" dataKey="OriginalProportion" stroke="#B94A75" fill="url(#colorUv)" />
-                    <Area type="monotone" dataKey="NewProportion" stroke="#3F413C" fill="url(#colorPv)" />
+                    <Area type="monotone" dataKey="Original" stroke="#B94A75" fill="url(#colorUv)" />
                 </AreaChart>
             </ResponsiveContainer><br />
-            <Source SourceText="" LinktoSource=""/>
+            <Source SourceText="Research Paper from International Journal of Reproduction, Contraception, Obstetrics and Gynecology" LinktoSource="10.18203/2320-1770.IJRCOG20171932"/>
             </div>
         </div>
 

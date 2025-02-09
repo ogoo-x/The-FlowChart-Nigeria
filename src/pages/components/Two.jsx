@@ -6,6 +6,7 @@ import { style } from 'framer-motion/client';
 
 import GirlIconFilled from "../../assets/GirlIconFilled.svg";
 import GirlIconOutline from "../../assets/GirlIconOutline.svg";
+import StatComparison from './HomepageAnimations/StatComparison';
 
 const dataHBarChart = [
   {
@@ -75,28 +76,7 @@ function Two() {
           a mere myth in others. The burden of period poverty varies even between towns in the same cities. This knowledge emphasizes the need for directed efforts in addressing period poverty.
         </p>
         <br />
-        {/* <div className={styles.stickFigures}>
-          <div>
-              <p>1 in 5 females in anambra lack access to period products.</p>
-              <div>
-                <img src={GirlIconFilled} alt="GirlIconFilled" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-              </div>
-          </div>
-          <span></span>
-          <div>
-              <p>1 in 5 females in anambra lack access to period products.</p>
-              <div>
-                <img src={GirlIconFilled} alt="GirlIconFilled" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-                <img src={GirlIconOutline} alt="GirlIconOutline" />
-              </div>
-          </div> */}
+        <StatComparison />
         </div>
         
         <div>

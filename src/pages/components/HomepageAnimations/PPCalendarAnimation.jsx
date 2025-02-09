@@ -20,7 +20,7 @@ const PeriodPovertyCalendar = () => {
       <motion.div 
         className="w-40 p-1.5 md:p-2.5 border border-black rounded-lg"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
         <div className="grid grid-cols-5 gap-1">
@@ -31,7 +31,7 @@ const PeriodPovertyCalendar = () => {
                 missedDays.includes(index + 1) ? 'bg-red-300' : 'bg-gray-50'
               }`}
               initial={{ opacity: 1 }}
-              animate={missedDays.includes(index + 1) ? {
+              whileInView={missedDays.includes(index + 1) ? {
                 opacity: [1, 0.5, 1],
                 scale: [1, 0.95, 1],
               } : {}}
@@ -49,7 +49,7 @@ const PeriodPovertyCalendar = () => {
       <div className="">
         <motion.p
           initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5 }}
           className="md:w-3/5 md:text-left"
         >
@@ -65,7 +65,7 @@ const PeriodPovertyCalendar = () => {
         <motion.p 
           className=""
           initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           More so, it is reponsible for up to <strong> 60% </strong> of all school dropouts in Nigeria.
@@ -95,7 +95,7 @@ const PeriodPovertyCalendar = () => {
             strokeWidth="10"
             strokeDasharray={`${percentage * 2.83} 283`}
             initial={{ strokeDashoffset: 283 }}
-            animate={{ strokeDashoffset: 283 * (1 - percentage / 62) }}
+            whileInView={{ strokeDashoffset: 283 * (1 - percentage / 62) }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
         </svg>
@@ -104,7 +104,7 @@ const PeriodPovertyCalendar = () => {
         <motion.div 
           className="absolute inset-0 flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
           <span className="text-sm md:text-2xl hidden md:block md:mt-0 md:font-semibold font-medium text-gray-800">60%</span>
@@ -128,7 +128,7 @@ const PeriodPovertyCalendar = () => {
         <motion.p 
           className=""
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           As an alternative to manage their periods, many females make use of unhygienic products which reduces their quality of lifein many ways.
@@ -141,7 +141,7 @@ const PeriodPovertyCalendar = () => {
         <motion.p 
           className=""
           initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Period poverty is worsened by stigma and lack of support, trapping our society in a cycle of poverty and gender inequality.
