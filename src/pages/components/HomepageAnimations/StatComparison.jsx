@@ -11,20 +11,20 @@ const StatComparison = () => {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
-      transition: { staggerChildren: 0.2 }
+      transition: { staggerChildren: 0.05 }
     }
   };
 
   const iconVariants = {
     hidden: { 
       opacity: 0,
-      scale: 0.5,
-      x: -20 
+      scale: 1,
+      y: 10 
     },
     visible: { 
       opacity: 1,
       scale: 1,
-      x: 0
+      y: 0
       }
   };
 

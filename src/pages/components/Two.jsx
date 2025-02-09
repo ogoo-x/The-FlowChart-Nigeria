@@ -59,7 +59,7 @@ function Two() {
             <Bar dataKey="value" fill="#fff9f5" barSize={30} stroke="#3F413C" strokeWidth={1}/>
           </BarChart>
         </ResponsiveContainer><br />
-        <Source SourceText={"BBC Africa Visual Journalism Research 2023"} LinktoSource={"https://www.bbc.com/news/world-africa-66423981"}/>
+        <Source LinktoSource={"https://www.bbc.com/news/world-africa-66423981"}/>
         </div>
        </div>
     </div>

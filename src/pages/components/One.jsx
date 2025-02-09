@@ -34,8 +34,8 @@ function One() {
     </div>
     </div>
     </div>
-    <img src={Divider} className={styles.divider}/>
-    <div className={styles.content} id='introduction'>
+    <img src={Divider} id='introduction' className={styles.divider}/>
+    <div className={styles.content}>
     <div className={styles.content2}>
       <div>
         <h2>

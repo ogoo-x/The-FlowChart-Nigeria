@@ -8,7 +8,7 @@ function CTACard({title, icon, iconAlt, text, cta, onClack}) {
       <h3>{title}</h3>
       <img src={icon} alt={iconAlt} />
       <p>{text}</p>
-      <button onClick={onClack}>{cta}</button>
+      <a href={onClack}>{cta}</a>
     </div>
   )
 }

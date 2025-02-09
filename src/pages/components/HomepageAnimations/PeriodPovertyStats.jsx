@@ -13,7 +13,7 @@ const PeriodPovertyStats = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.05,
-        delayChildren: 0.3
+        delayChildren: 0.15
       }
     }
   };
@@ -27,7 +27,7 @@ const PeriodPovertyStats = () => {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.3
+        duration: 0.2
       }
     }
   };
@@ -91,7 +91,7 @@ const PeriodPovertyStats = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.2 }}
         className="text-center mt-6 p-4 bg-red-50 rounded-lg"
       >
         <p className="text-red-700">

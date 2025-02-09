@@ -1,15 +1,16 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import styles from './Four.module.css';
 import CTACard from './CTACard';
 import Source from './Source';
 
 // Images for CTA cards
-import Advocacy from "../../assets/CTA/Advocacy.svg";
-import Data from "../../assets/CTA/Data.svg";
-import Interact from "../../assets/CTA/Interact.svg";
-import Resources from "../../assets/CTA/Advocacy.svg";
-import Share from "../../assets/CTA/Advocacy.svg";
+import Advocacy from "../../assets/CTA/Advocacy.png";
+import Data from "../../assets/CTA/Data.png";
+import Interact from "../../assets/CTA/Interact.png";
+import Resources from "../../assets/CTA/Resources.png";
+import Share from "../../assets/CTA/Share.png";
 
 const acData = [
     {
@@ -78,7 +79,7 @@ function Four() {
                     <Area type="monotone" dataKey="Original" stroke="#B94A75" fill="url(#colorUv)" />
                 </AreaChart>
             </ResponsiveContainer><br />
-            <Source SourceText="Research Paper from International Journal of Reproduction, Contraception, Obstetrics and Gynecology" LinktoSource="10.18203/2320-1770.IJRCOG20171932"/>
+            <Source LinktoSource="10.18203/2320-1770.IJRCOG20171932"/>
             </div>
         </div>
 

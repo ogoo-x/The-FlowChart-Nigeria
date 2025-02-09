@@ -1,7 +1,7 @@
 .content {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
     overflow: hidden;
 }
@@ -36,21 +36,49 @@
     width: 350px;
     height: 450px;
     border-radius: 15px;
-    border: 1.5px solid var(--header-color);
-    background: #F9F9F7;
+    border: 1px solid var(--header-color);
+    background: #fafafa;
 }
 
 .CTACard h3 {
     font-size: 32px;
 }
 
-.CTACard button {
+.CTACard a {
+    cursor: pointer;
     background-color: var(--tfcpink);
     color: white;
-    border: 1.5px solid var(--header-color);
+    border: 1px solid var(--header-color);
     font-variant: all-small-caps;
     padding: 10px 20px;
     font-size: inherit;
+    transition: ease-out 0.2s;
+}
+
+.CTACard a:hover {
+    background-color: #863252;
+    transition: ease-in 0.2s;
+}
+
+@media screen and (max-width:900px) {
+    .CTACard {
+        width: 200px;
+        height: 270px;
+        font-size: 10px;
+        padding: 1.3rem;
+    }
+
+    .CTACard h3 {
+        font-size: 20px;
+    }
+
+    .CTACard img {
+        width: 50px;
+    }
+
+    .CTACard a {
+        padding: 5px 10px;
+    }
 }
 /* Card Page */
 .Calltoact {

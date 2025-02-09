@@ -48,9 +48,9 @@ const PeriodPovertyCalendar = () => {
       
       <div className="">
         <motion.p
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
           className="md:w-3/5 md:text-left"
         >
           Period poverty steals up to <strong>seven weeks</strong>  of schooling from its victims every school year.
@@ -64,9 +64,9 @@ const PeriodPovertyCalendar = () => {
       <div className="md:w-1/2 md:text-left">
         <motion.p 
           className=""
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
           More so, it is reponsible for up to <strong> 60% </strong> of all school dropouts in Nigeria.
         </motion.p>
@@ -127,9 +127,9 @@ const PeriodPovertyCalendar = () => {
         {/* Caption on the right */}
         <motion.p 
           className=""
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
           As an alternative to manage their periods, many females make use of unhygienic products which reduces their quality of lifein many ways.
         </motion.p>
@@ -140,9 +140,9 @@ const PeriodPovertyCalendar = () => {
         {/* Caption on the left */}
         <motion.p 
           className=""
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
           Period poverty is worsened by stigma and lack of support, trapping our society in a cycle of poverty and gender inequality.
         </motion.p>
