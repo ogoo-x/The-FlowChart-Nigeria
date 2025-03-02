@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import styles from './Four.module.css';
@@ -32,19 +32,58 @@ const acData = [
 ]
 
 function Four() {
+
+    const [firstCount, setFirstCount] = useState(0);
+    const [secondCount, setSecondCount] = useState(0);
+  
+    useEffect(() => {
+      // Animation duration in milliseconds
+      const duration = 2000;
+      // Number of steps for smooth animation
+      const steps = 60;
+      const firstInterval = duration / steps;
+      const firstIncrement = 130 / steps;
+      const secondIncrement = 300 / steps;
+  
+      const animateCounters = () => {
+        for (let step = 0; step <= steps; step++) {
+          setTimeout(() => {
+            setFirstCount(Math.min(Math.round(step * firstIncrement), 130));
+            setSecondCount(Math.min(Math.round(step * secondIncrement), 300));
+          }, step * firstInterval);
+        }
+      };
+  
+      // Start animation when component is in view
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            animateCounters();
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.1 }
+      );
+  
+      const element = document.getElementById('counter-container');
+      if (element) observer.observe(element);
+  
+      return () => observer.disconnect();
+    }, []);
+
   return (
     <div>
         <div className={styles.content}>
             <h2>Things are not all red though, something is being done about <em>Period Poverty</em></h2>
             <div className={styles.counter}>
-                <div>
-                    <h2>130</h2>
+                <div id='counter-container'>
+                    <h2>{firstCount}</h2>
                     <h3>Not for profit organisations 
                         are committed to solving 
                         period poverty</h3>
                 </div>
-                <div>
-                    <h2>300</h2>
+                <div id='counter-container'>
+                    <h2>{secondCount}</h2>
                     <h3>Not for profit organisations 
                         are involved in some way in 
                         solving period poverty</h3>

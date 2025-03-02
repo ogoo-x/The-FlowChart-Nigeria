@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Footer.module.css";
-import { AiFillInstagram, AiFillTikTok } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { IoLogoLinkedin } from "react-icons/io5";
 import {FaFacebookSquare} from "react-icons/fa";
 import {FaSquareXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -22,13 +23,13 @@ function Footer() {
           <a href="https://web.facebook.com/profile.php?id=61567180061933" ><FaFacebookSquare size={30} className={styles.reactIcons}/></a>
           <a href="https://x.com/TheFlowChartNig?t=X4LxgnuER3_QRJ1Bk7yxpg&s=08"><FaSquareXTwitter size={30} className={styles.reactIcons} /></a>
           <a href="https://www.instagram.com/theflowchartnigeria/"><AiFillInstagram size={30} className={styles.reactIcons} /> </a>
-          <a href="#"><AiFillTikTok size={30} className={styles.reactIcons}/></a>
+          <a href="#"><IoLogoLinkedin size={30} className={styles.reactIcons}/></a>
           <Mailto email="theflowchartnig@gmail.com" subject="Fighting Period Poverty" body="I would like to enquire/collaborate"><MdEmail size={30} className={styles.reactIcons} /></Mailto>
         </div>
       </div>
       
       <div>
-        <p className='text-center'>©The FlowChart Nigeria 2024.</p>
+        <p className='text-center'>©The FlowChart 2024-2025.</p>
       </div>
     </footer>
   )

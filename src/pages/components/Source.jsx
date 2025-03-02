@@ -26,7 +26,7 @@ const Source = ({ LinktoSource }) => {
           ${isTooltipVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}
         `}
       >
-        Learn more on how this data was processed
+        Learn more on how we processed this data
         <div className="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 border-4 border-transparent border-r-gray-800" />
       </div>
     </div>

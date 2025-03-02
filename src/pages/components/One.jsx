@@ -30,7 +30,7 @@ function One() {
              direct their resources where they're needed most. Our interactive visualization platform turns complex data into actionable insights.
              <br /><br />
              Now, stay with us to <AnchorLink href='#introduction' className={styles.anchorLink}> learn more about the problem of period poverty </AnchorLink> 
-             <br />and <AnchorLink href='#introduction' className={styles.anchorLink}> our unique approach to solving it.</AnchorLink></p>
+             <br />and <AnchorLink href='#map' className={styles.anchorLink}> our unique approach to solving it.</AnchorLink></p>
     </div>
     </div>
     </div>
