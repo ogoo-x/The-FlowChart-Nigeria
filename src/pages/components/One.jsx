@@ -26,7 +26,7 @@ function One() {
     <div className= {styles.content}>
     <div className={styles.content1}>
       <h1>Transform Lives Through Data-Driven Impact.</h1> <br />
-          <p>The FlowChart maps the scale and distribution of period poverty throughout Nigeria, empowering NGOs and organizations to
+          <p>The FlowChart maps the scale and distribution of the menstrual health gap throughout Nigeria, empowering NGOs and organizations to
              direct their resources where they're needed most. Our interactive visualization platform turns complex data into actionable insights.
              <br /><br />
              Now, stay with us to <AnchorLink href='#introduction' className={styles.anchorLink}> learn more about the problem of period poverty </AnchorLink> 

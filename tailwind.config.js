@@ -10,6 +10,7 @@ export default {
         'custom-pink': '#B94A75', 
         'custom-red': '#782835', 
         'custom-black': '#3F413C', 
+        'custom-white': '#fff9f5',
     }, 
     },
   },

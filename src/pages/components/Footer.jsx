@@ -23,7 +23,7 @@ function Footer() {
           <a href="https://web.facebook.com/profile.php?id=61567180061933" ><FaFacebookSquare size={30} className={styles.reactIcons}/></a>
           <a href="https://x.com/TheFlowChartNig?t=X4LxgnuER3_QRJ1Bk7yxpg&s=08"><FaSquareXTwitter size={30} className={styles.reactIcons} /></a>
           <a href="https://www.instagram.com/theflowchartnigeria/"><AiFillInstagram size={30} className={styles.reactIcons} /> </a>
-          <a href="#"><IoLogoLinkedin size={30} className={styles.reactIcons}/></a>
+          <a href="https://www.linkedin.com/company/the-flowchart/"><IoLogoLinkedin size={30} className={styles.reactIcons}/></a>
           <Mailto email="theflowchartnig@gmail.com" subject="Fighting Period Poverty" body="I would like to enquire/collaborate"><MdEmail size={30} className={styles.reactIcons} /></Mailto>
         </div>
       </div>

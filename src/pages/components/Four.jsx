@@ -4,6 +4,7 @@ import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tool
 import styles from './Four.module.css';
 import CTACard from './CTACard';
 import Source from './Source';
+import EvidenceLoop from './HomepageAnimations/EvidenceLoop';
 
 // Images for CTA cards
 import Advocacy from "../../assets/CTA/Advocacy.png";
@@ -74,7 +75,7 @@ function Four() {
   return (
     <div>
         <div className={styles.content}>
-            <h2>Things are not all red though, something is being done about <em>Period Poverty</em></h2>
+            <h2>Something is being done about <em>Period Poverty</em></h2>
             <div className={styles.counter}>
                 <div id='counter-container'>
                     <h2>{firstCount}</h2>
@@ -92,11 +93,10 @@ function Four() {
         </div>
 
         <div className={styles.content}>
-            <h2>However, the efforts are not enough.</h2>
+            <h2>However, these efforts are not enough.</h2>
             <p>Only a small percentage of the period poverty burden has been eased as a result of the efforts of these 
-            organisations. Also, because of the intermittent nature of the menstrual cycle, interventions require more long 
-            term solutions. An incorporation of this disparity in the legislation is important to making a lasting impact on the 
-            period poverty burden</p>
+            organisations. <br />Also, because of the intermittent nature of the menstrual cycle, interventions require more long 
+            term solutions.</p>
             <br /><br />
             <div>
             <ResponsiveContainer width="100%" height={300}>
@@ -121,9 +121,24 @@ function Four() {
             <Source LinktoSource="10.18203/2320-1770.IJRCOG20171932"/>
             </div>
         </div>
+        
+         <span id='map'></span>
 
         <div className={styles.content}>
-            <h2>This is where YOU come in.</h2>
+            <h2><em>The FlowChart Solution</em></h2> <br /> 
+            <p>
+            The FlowChart provides the data intelligence that powers effective menstrual health 
+            interventions across Nigeria. 
+            Our interactive map displays detailed menstrual health gaps across various Local Government Areas, 
+            revealing precisely where challenges are most severe. Our research identifies exactly where and how 
+            to address period poverty, while our NGO partners implement these targeted solutions. 
+            <br />By continuously measuring results, we create an evidence loop that constantly improves programs. 
+            This research-first approach ensures resources reach the right communities with the right solutions.</p>
+            <EvidenceLoop />
+        </div>
+
+        <div className={styles.content}>
+            <h2>So, how do YOU come in?</h2>
             <p>Now you know all this, here are some things you can do with this information:</p> <br /><br />
             <div className={styles.Calltoact}>
                 <div className={styles.rowOne}>
@@ -139,7 +154,8 @@ function Four() {
                     icon={Interact}
                     iconAlt={"Interact with Map"}
                     text={"The charts and maps are great ways to track and inform our effort and progress in addressing period poverty."}
-                    cta={"interact with the map here"}/>
+                    cta={"interact with the map here"}
+                    onClack={"/map"}/>
                 </div>
                 <div className={styles.rowTwo}>
                 <CTACard 
@@ -147,21 +163,24 @@ function Four() {
                     icon={Resources}
                     iconAlt={"Person reading book"}
                     text={"The resources range from reproductive health education to problems we can avoid in period poverty campaigns"}
-                    cta={"go to the resources page"}/> 
+                    cta={"go to the resources page"}
+                    onClack={"/resources"}/> 
                 
                 <CTACard 
                     title={"ADVOCACY"}
                     icon={Advocacy}
                     iconAlt={"Hand holding placard."}
                     text={"Data promotes discourse and advocacy. These tools are necessary for addressing period poverty in Nigeria"}
-                    cta={"join the conversation"}/>
+                    cta={"join the conversation"}
+                    onClack={"https://x.com/TheFlowChartNig?t=X4LxgnuER3_QRJ1Bk7yxpg&s=08"}/>
                 </div>
                 <CTACard 
                     title={"CONTRIBUTE"}
                     icon={Data}
                     iconAlt={"cONTRIBUTE Icon"}
                     text={"Send in any data you have on period poverty here. The more detailed the map is, the better."}
-                    cta={"submit your data here"}/>           
+                    cta={"submit your data here"}
+                    onClack={"https://linktr.ee/theflowchart"}/>           
             </div>
         </div>
     </div>

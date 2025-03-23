@@ -1,3 +1,18 @@
 .section {
     overflow-x: hidden !important;
 }
+
+.content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width:900px) {
+    .content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+    }
+}

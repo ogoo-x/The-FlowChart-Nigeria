@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./Nav.css";
 import {NavLink, Outlet} from "react-router-dom";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "../assets/Headline.svg";
 
 function Nav() {
@@ -25,15 +24,14 @@ function Nav() {
             <NavLink to="/">
               <img src={Logo} alt="The FlowChart Logo" className="navLogo" /> 
             </NavLink>
+            
             <div className={`navigationMenu ${open ? "show-menu" : ""}`}>
               <ul className="navList">
                 <li className="navItem">
-                  <AnchorLink href='#map'>
                     <NavLink 
-                      to="/"
+                      to="/map"
                       onClick={closeMenuOnMobile}>
                       <button>MAP</button></NavLink>
-                  </AnchorLink>
                   
                 </li> 
                 <li className="navItem">
@@ -49,9 +47,11 @@ function Nav() {
                       <button>ABOUT US</button></NavLink>
                 </li>
                 <li className="navItem">
-                  <AnchorLink href="#footer" onClick={closeMenuOnMobile}>
+                  <NavLink 
+                      to="/contact"
+                      onClick={closeMenuOnMobile}>
                   <button>CONTACT</button>
-                  </AnchorLink>
+                  </NavLink>
                 </li>
               </ul>
             </div>
