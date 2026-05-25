@@ -42,6 +42,12 @@ function Nav() {
                 </li>
                 <li className="navItem">
                   <NavLink 
+                      to="/hub"
+                      onClick={closeMenuOnMobile}>
+                      <button>HUB</button></NavLink>
+                </li>
+                <li className="navItem">
+                  <NavLink 
                       to="/about"
                       onClick={closeMenuOnMobile}>
                       <button>ABOUT US</button></NavLink>

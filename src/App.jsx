@@ -4,6 +4,7 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Solution from "./pages/Solution";
+import Collaborate from "./pages/Collaborate";
 import "./App.css"
 
 import { Route, Routes } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="map" element={<Solution />} />
           <Route path="resources" element={<Resources />}/>
+          <Route path="hub" element={<Collaborate />}/>
           <Route path="contact" element={<Contact />}/>
           <Route path="about" element={<About />}/>
         </Routes>
